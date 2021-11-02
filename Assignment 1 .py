@@ -105,6 +105,19 @@ list.reverse()
 list
 
 
+# In[7]:
+
+
+list1 = [10,20,25,30,45,35]
+
+for i in range(len(list1) // 2):
+    
+    list1[i], list1[-1 - i] = list1[-1 - i], list1[i]
+
+
+list1
+
+
 # 7. Display “My Name Is James” as “My**Name**Is**James” using output formatting of a print() function
 # For example: print('My', 'Name', 'Is', 'Tamim') will display MyNameIsJames
 # So use one of the formatting argument of print() to turn the output into My**Name**Is**Tamim
